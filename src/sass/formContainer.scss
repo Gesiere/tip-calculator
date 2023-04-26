@@ -1,0 +1,58 @@
+form{
+    .input-container{
+        position: relative;
+        input{
+            height: 2.5rem;
+            width: 100%;
+            background-color: $very-light-grayish-cyan;
+            text-align: right;
+            padding-inline:0.9rem;
+            border-radius: 5px;
+            font-size: 26px;
+            font-weight: 700;
+            color: $very-dark-cyan;
+            &:focus{
+                border: 2px solid $primary-strong-cyan;
+            }
+            &::placeholder{
+                color: #c9c5c5;
+            }
+        }
+        img{
+            position: absolute;
+            bottom: 0.8rem;
+            left: 0.9rem;
+        }
+
+    }
+    .form-label{
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: $dark-grayish-cyan;
+    }
+    .form-control{
+        @include breakpoint-up(medium){
+            display: grid;
+            grid-template-columns: repeat(2, 25rem);
+            column-gap: 2rem;
+        }
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            color: red;
+            &.show-element{
+                opacity: 1;
+                visibility: visible;
+                display: block;
+            }
+        }
+    }
+
+}

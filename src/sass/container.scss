@@ -1,0 +1,31 @@
+.container{
+    // background-color: $white;
+    @media (min-width: 540px) and (max-width: 991px) {
+        max-width: 80%;
+        margin-inline: auto;
+    }
+    h2{
+        color: $very-dark-cyan;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 400;
+        margin: 1.5rem 0;
+        text-align: center;
+        @include breakpoint-up(medium){
+            margin-bottom: 5rem;
+        }
+    }
+
+    .form-container{
+        background-color: $white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        @include breakpoint-down(medium){
+            padding: 1.5rem;
+        }
+    }
+
+     .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}

@@ -1,0 +1,65 @@
+.left-section{
+    .tip-percentages{
+            margin-top: 2rem;
+            .title{
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: $dark-grayish-cyan;
+            }
+        
+            .percentage-values{
+                margin-top: 2rem;
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                gap: 1rem;
+                @include breakpoint-up(medium){
+                    grid-template-columns:  repeat(auto-fit, minmax(7.25rem, 1fr));
+                }
+                input{
+                    cursor: pointer;
+                    padding: 0.5rem 0;
+                    background-color: $very-dark-cyan;
+                    color: $white;
+                    font-size: 24px;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    transition: all 0.4s ease-in;
+                    
+                    &.showClass{
+                        background-color: $primary-strong-cyan;
+                        color: $very-dark-cyan;
+                    }
+                    &:hover{
+                        background-color: $primary-strong-cyan;
+                    }
+                }
+                .custom{
+                    display: block;
+                    background-color: $very-light-grayish-cyan;
+                    font-size: 20px;
+                    text-align: center;
+                    width: auto;
+                    border-radius: 5px;
+                    color: $very-dark-cyan;
+                    &::placeholder{
+                        color: $very-dark-cyan;
+                        font-weight: 600;
+                        
+                    }
+                    &:focus{
+                        border: 2px solid $primary-strong-cyan;
+                    }
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        
+            
+        }
+        .people{
+            margin-top: 2rem;
+            
+        }
+
+}

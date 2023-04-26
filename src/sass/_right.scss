@@ -1,0 +1,50 @@
+.right-section{
+    background-color: $very-dark-cyan;
+    border-radius: 10px;
+    padding: 2rem;
+    @include breakpoint-down(medium){
+        margin-top: 2rem;
+    }
+    @include breakpoint-up(medium){
+        display: grid;
+    }
+    .result-container{
+        display: flex;
+        justify-content: space-between;
+        .result-message{
+            p{
+                color: $white;
+                line-height: 1.9;
+            }
+            span{
+                color: $grayish-cyan;
+            }
+        }
+        .result-display{
+            p{
+                color: $primary-strong-cyan;
+                font-size: 35px;
+
+            }
+        }
+    }
+
+    .reset-btn{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $primary-strong-cyan;
+        color: $dark-grayish-cyan;
+        opacity: 0.4;
+        border-radius: 4px;
+        @include breakpoint-up(medium){
+            align-self: self-end;
+        }
+        &.add-class{
+            opacity: 1;
+            color: $very-dark-cyan;
+        }
+    }
+}
