@@ -4,6 +4,7 @@
     padding: 2rem;
     @include breakpoint-down(medium){
         margin-top: 2rem;
+        padding: 1rem;
     }
     @include breakpoint-up(medium){
         display: grid;
